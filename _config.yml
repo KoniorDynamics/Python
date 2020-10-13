@@ -1,4 +1,4 @@
 theme: jekyll-theme-midnight
-title: [Python - ćwiczenia]
-description: [Szybkie i przyjemne powtórzenie Python 3.9]
-show_downloads: ["false"]
+title: Python - ćwiczenia
+description: Szybkie i przyjemne powtórzenie Python 3.9
+show_downloads: false

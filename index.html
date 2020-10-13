@@ -8,11 +8,51 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
           integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet"
+          href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/default.min.css">
+    <link rel="stylesheet" href="styles/dracula.css">
+    <link rel="stylesheet" href="styles/main.css">
 
 </head>
 <body>
-<h1>It works</h1>
-<a href="./data_types.html">Data Types <span class="badge badge-secondary">New</span></a>
+
+<div class="container">
+    <div class="row">
+        <div class="col-2">
+            <h1>Python</h1>
+            <nav class="nav-main">
+                <a href="./data_types.html">Data Types</a>
+                <a href="./data_types.html">Data Types</a>
+                <a href="./data_types.html">Data Types</a>
+                <a href="./data_types.html">Data Types</a>
+                <a href="./data_types.html">Data Types</a>
+                <a href="./data_types.html">Data Types</a>
+                <a href="./data_types.html">Data Types</a>
+                <a href="./data_types.html">Data Types</a>
+                <a href="./data_types.html">Data Types</a>
+                <a href="./data_types.html">Data Types</a>
+                <a href="./data_types.html">Data Types</a>
+                <a href="./data_types.html">Data Types</a>
+                <a href="./data_types.html">Data Types</a>
+                <a href="./data_types.html">Data Types</a>
+                <a href="./data_types.html">Data Types</a>
+                <a href="./data_types.html">Data Types</a>
+                <a href="./data_types.html">Data Types</a>
+                <a href="./data_types.html">Data Types</a>
+                <a href="./data_types.html">Data Types</a>
+                <a href="./data_types.html">Data Types</a>
+            </nav>
+        </div>
+        <div class="col-10">
+<pre><code class="python">
+    time_delta = datetime.now() - datetime.strptime(t[3], "%Y-%m-%d %H:%M:%S")
+        m, s = divmod(time_delta.seconds, 60)
+        h, m = divmod(m, 60)
+        self._created = f"{time_delta.days} days, {h:d}h:{m:02d}m"
+</code></pre>
+        </div>
+    </div>
+</div>
 
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -25,5 +65,9 @@
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
 <script src="scripts/scripts.js" async defer></script>
+
+
+<script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 </body>
 </html>

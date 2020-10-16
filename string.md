@@ -14,7 +14,8 @@
         
          * `text[0]` -> zwraca pierwszy znak
          * `text[-1]` -> zwraca ostatni znak
-         * `text[0:3]` -> zwraca znaki od indeksu 0 do indeksu 3
+         * `text[0:3]` -> zwraca znaki od indeksu 0 do indeksu 2 (wynika to z faktu, że przedział jest lewostronnie
+                         domknięty, to znaczy, że element znajdujący się pod indeksem końcowym nie zostanie włączony.)
          * `text[::4]` -> zwraca co 4 znak od początku do końca
          * `text[::-1]` -> zwraca odwrócone wyrażenie (txet) 
             
@@ -255,11 +256,12 @@
     
         ```python
       filename = 'test_file.txt'
-      f = open(filename, 'w')
-      print('wiadomość testowa', file=f)
-      f.close()
+      with open(filename, mode='w') as file:
+          txt = 'wiadomość testowa'
+          file.write(txt)
         
-      f = open(filename, 'r')
-      f.read()
-      'wiadomość testowa'
+      with open('test_file.txt', mode='r') as file:
+          file_content = file.read()
+          print(file_content) 
+          'wiadomość testowa'
         ```
